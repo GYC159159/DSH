@@ -1,6 +1,7 @@
 url: https://github.com/GYC159159/DSH
 name: GYC159159/DSH
 category: usage
+tarball: https://github.com/GYC159159/DSH/releases/latest/download/dsh-task-cost.tgz
 description:
   en: 'Adds a Task Cost panel to the DSH composer: fill in a budget and a budget tolerance, see a token-priced cost estimate with a low/high band before the task runs, and the real charge (summed from each assistant message usage) plus the account balance after it finishes. When the estimate falls outside the budget, a decision prompt offers cheaper plans, the over-budget run, or cancelling.'
   zh: '在 DSH 输入框旁加一个「任务花销」面板：可填预算与预算误差，布置任务时按 token 单价给出花费与上下波动区间，估算超出预算就弹出方案让你选（节省模式 / 换低价模型 / 仍超预算执行 / 取消），任务结束后按真实 usage 结算并显示账户余额。'
