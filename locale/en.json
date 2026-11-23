@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Task Cost",
+    "description": "Adds a Task Cost panel to the composer: set a budget and budget tolerance, get an automatic cost estimate with an uncertainty band, confirm when the estimate exceeds the budget, and see the real charge and account balance when the task finishes. Unit: CNY."
+  }
+}

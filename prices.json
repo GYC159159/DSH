@@ -1,0 +1,15 @@
+{
+  "currency": "CNY",
+  "unit": "元 / 百万 token",
+  "note": "改这个文件即可改估算口径，Host 每次估算都会重读。input=缓存未命中输入，cacheRead=缓存命中输入，output=输出。",
+  "default": { "input": 2, "cacheRead": 0.5, "output": 8 },
+  "models": {
+    "deepseek-chat": { "input": 2, "cacheRead": 0.5, "output": 8 },
+    "deepseek-reasoner": { "input": 4, "cacheRead": 1, "output": 16 },
+    "deepseek-v4": { "input": 2, "cacheRead": 0.5, "output": 8 },
+    "deepseek-v4-pro": { "input": 4, "cacheRead": 1, "output": 16 },
+    "doubao": { "input": 0.8, "cacheRead": 0.16, "output": 2 },
+    "claude": { "input": 21, "cacheRead": 2.1, "output": 105 },
+    "gpt": { "input": 18, "cacheRead": 1.8, "output": 72 }
+  }
+}

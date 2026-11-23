@@ -1,0 +1,6 @@
+# dsh-task-cost bundle patch：把这个插件挂进 profile 的行栈。
+- insert:
+    - id: dsh-task-cost
+      name: 'dsh-task-cost'
+      config:
+        enabled: true

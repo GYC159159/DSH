@@ -1,0 +1,68 @@
+{
+  "name": "dsh-task-cost",
+  "version": "0.1.0",
+  "description": "任务花销：预算 / 预估 / 实际花费 / 账户余额 一体化面板",
+  "type": "module",
+  "main": "./index.js",
+  "icon": "./icon.svg",
+  "license": "MIT",
+  "author": "GYCgy",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GYC159159/DSH.git"
+  },
+  "homepage": "https://github.com/GYC159159/DSH#readme",
+  "bugs": {
+    "url": "https://github.com/GYC159159/DSH/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-bundle",
+    "deepseek-harness",
+    "deepseek",
+    "task-cost",
+    "budget",
+    "tokens",
+    "任务花销"
+  ],
+  "engines": {
+    "dsh": ">=0.2.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./client.js": "./client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json",
+    "./locale/zh.json": "./locale/zh.json",
+    "./locale/en.json": "./locale/en.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "prices.json",
+    "icon.svg",
+    "locale",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "dsh": {
+    "id": "dsh-task-cost",
+    "name": "任务花销",
+    "version": "0.1.0",
+    "permissions": "读取会话 token 用量, 读取账户余额, 自建本地 HTTP 状态接口",
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}
