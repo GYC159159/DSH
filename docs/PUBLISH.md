@@ -14,13 +14,14 @@
 ### 1. 建仓库并推代码
 
 ```bash
-# 在 GitHub 上新建 public 仓库 GYCgy/dsh-task-cost（不要勾 README）
+# 仓库已建好：https://github.com/GYC159159/DSH
+# 本地已 git init + 提交，只差推上去
 cd /d/dsh5/dsh-task-cost
 git init -b main
 git add -A
 git commit -m "dsh-task-cost 0.1.0: task cost panel with budget-aware estimates"
-git remote add origin https://github.com/GYCgy/dsh-task-cost.git
-git push -u origin main
+git remote add origin https://github.com/GYC159159/DSH.git
+git push -u origin main   # 会弹浏览器授权，授权一次即可
 ```
 
 建好后去仓库 **About → Topics** 加 `dsh-plugin`（收录要求）。
@@ -46,7 +47,7 @@ cd /d/dsh5/dsh-task-cost
 然后在条目的 YAML 里加一行：
 
 ```yaml
-tarball: https://github.com/GYCgy/dsh-task-cost/releases/latest/download/dsh-task-cost.tgz
+tarball: https://github.com/GYC159159/DSH/releases/latest/download/dsh-task-cost.tgz
 ```
 
 ⚠️ 资产名别带版本号，否则下次发版这个链接就 404。
@@ -61,12 +62,12 @@ git clone https://github.com/<你的GitHub账号>/awesome-dsh-plugin.git
 cd awesome-dsh-plugin
 
 # 2) 拷条目（文件名必须是 owner__repo.yml）
-cp /d/dsh5/dsh-task-cost/docs/awesome-entry.yml data/plugins/GYCgy__dsh-task-cost.yml
+cp /d/dsh5/dsh-task-cost/docs/awesome-entry.yml data/plugins/GYC159159__DSH.yml
 
 # 3) 提 PR
 git checkout -b add-dsh-task-cost
-git add data/plugins/GYCgy__dsh-task-cost.yml
-git commit -m "Add GYCgy/dsh-task-cost"
+git add data/plugins/GYC159159__DSH.yml
+git commit -m "Add GYC159159/DSH"
 git push -u origin add-dsh-task-cost
 ```
 
